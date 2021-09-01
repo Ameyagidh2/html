@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+      /* margin between elements and padding within the elements  */
+    *{
+        /* background-color: tan; */
+        box-sizing: border-box;
+        /* border box will give every div a seperate box to fit itself */
+        margin: 0;
+        padding:0;
+    }
+     
+    
+   body{
+       font-family: 'Style Script', cursive;
+  
+     }
+
+   .container{
+    border: 2px solid black;
+    margin: 147px 547px ;
+    /* margin: auto; */
+    padding: 10px;
+    width: 900px;
+    background-color: darkgray;
+  } 
+ /* each block is a div  */
+ .items{
+    background-color:tan;
+    border: 2px solid black;
+    margin: 17px 3px ;
+    padding: 20px 13px ;
+    /* width: 1000px;
+    height:70px ; */
+    
+  }
+
+#fruitpar{
+ color: blue;
+}
+
+  /* div is a block element  */
+ 
+  #fruits{
+/* float followed by width change is necessary and use inspect elements to change the width value */
+    float:left;
+    width:48%;
+  } 
+
+ #vegetables{
+  float:left;
+  width:48%;
+  }  
+
+  #domestic{
+   clear:both;
+    width:100%;
+
+  } 
+  /* for clear both with width as 100% */
+  p,h1{
+    text-align: center;
+  }
+
+  .btn{
+    background-color: gainsboro;
+  }
+  .btn:hover{
+    background-color: goldenrod;
+  }
+  .btn:active{
+    background-color: lawngreen;
+    /* active when pressed for a long time  */
+  }
+  a{
+    text-decoration: none;
+    /* to remove underline  */
+    color: ivory;
+  }
+ a:active{
+   background-color: hotpink;
+ }
+a:visited{
+  background-color: green;
+}
+
+    </style>
+</head>
+<body>
+    <!-- in para change color and in div change border  -->
+    <div class="container">
+        <h1> Welcome to my store</h1>
+        <div id="fruits" class="items">
+         <p id="fruitpar" class="para">
+          Fruits present Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio aut accusamus aperiam eum cum mollitia labore, quae error debitis doloremque deleniti qui quisquam dolorum eveniet laudantium vitae magni! Aliquam, tempore. Dolor, nesciunt sapiente 
+
+        </p>
+    </div>
+    <div id="vegetables" class="items">
+      <p id="computerpar",class="para">
+          Vegetables present Lorem ipsum dolor,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi quisquam explicabo possimus obcaecati quam placeat? Obcaecati ea velit commodi sapiente at magni possimus totam incidunt tempore iure asperiores quia, sint beatae illum praesentium quod ipsa optio? Sequi ducimus architecto ad, voluptatibus eveniet culpa aliquid nisi laudantium non. Laboriosam, fuga dicta. sit amet consectetur adipisicing elit. Reprehenderit odio aut accusamus aperiam eum cum mollitia labore, quae error debitis doloremque deleniti qui quisquam dolorum eveniet laudantium vitae magni! Aliquam, tempore. Dolor, nesciunt sapiente!
+
+      </p>
+      </div>
+    <div id="domestic" class="items">
+      <p id="domesticpar",class="para">
+          domestic hou lore se items  present Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit odio aut accusamus aperiam eum cum mollitia labore, quae error debitis doloremque deleniti qui quisquam dolorum eveniet laudantium vitae magni! Aliquam, tempore. Dolor, nesciunt sapiente!      </p>
+    </div>
+
+<div>
+<button class="btn">Contact us</button>&nbsp&nbsp&nbsp&nbsp
+<a href="https://www.google.com/" target="blank" class="btn">read more</a>
+</div>
+
+  </div>
+</body>
+</html>

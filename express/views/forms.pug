@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>title</title> 
+    <!-- this comes from apps2.js file  -->
+    <!-- include style in pug  -->
+    style 
+       include ../static/style.css
+
+</head>
+<body>
+<div class="container">  
+    <nav class="nav_bar">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact Us</a></li>
+        </ul>
+    </nav>
+   
+   
+       <h1 id="offer">
+          | #{content} 
+       </h1>
+    //- name in form is what goes in the backend 
+
+    <form action="/" class="form1" method="POST">
+      <input type="text" name="name" id="my_name" placeholder="Name"><br><br>  
+      <input type="email" name="email" id="my_email" placeholder="Email"><br> <br>  
+      <input type="number" name="age" id="my_age" placeholder="Age"> <br><br>  
+      <input type="text" name="gender" id="my_gender" placeholder="Gender"><br><br>   
+      <textarea name="address" id="my_address" cols=22 rows=10 placeholder="Address"></textarea><br><br>  
+      <button class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>

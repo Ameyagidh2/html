@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    border:2px solid darkorchid;
+    height: 333330px ;
+    
+}
+
+        .box{
+            display: inline-block;
+            border: 2px solid darkgray;
+            width:150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #b1{
+            ;
+        }
+        #b2{
+            ;
+        }
+        #b3{
+            /* relative to its normal position and leaves a gap and thus top bottom things to be changed */
+        /* absolute is wrt parent */
+        /* fixed for chat box */
+        /* sticky to fix at top for menu */
+            /* position:relative; */
+           /* top: 34px; */
+
+           position:fixed ;
+           right : 34px;
+           bottom:3px;
+        }
+        #b4{
+           ;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- div inline block then width change to get things side by side  -->
+    <div class="container">
+    <div class="box"id="b1">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box"id="b2">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box"id="b3">
+        Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box"id="b4">
+        Lorem ipsum dolor sit amet.
+    </div>
+</div>
+</body>
+</html>

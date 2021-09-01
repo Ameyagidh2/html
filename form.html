@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- name for backend saving anad id for label -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            background-color:darkcyan;
+            /* border-radius: 35px ; */
+        }
+        .navbar ul{
+            /* to get background color from parent div bar  */
+            overflow: auto;
+            /* height: 50px ; */
+            padding: 20px 50px ;
+            border: 2px solid black;
+            /* use borders to understand the class and containers  */
+           
+        }
+     .navbar li{
+         float: left;
+         /* navigation bar to the  left side  */
+         /* to remove the styling of bullets */
+         list-style: none ;
+         padding: 20px 50px ;
+         
+     }
+     .navbar li a{
+        padding: 3px 3px ;
+        text-decoration: none;
+        color: cornsilk;
+     }
+     .navbar li a:hover{
+        padding: 3px 3px ;
+        text-decoration: none;
+        color: rgb(216, 179, 32);
+     }
+     
+     .searchbox{
+          float: right;
+          color: bisque;
+          padding: 21px 26px;
+     }
+     .navbar input{
+         border:black;
+         border-radius: 15px;
+         padding: 3px ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="store.html">Home</a> </li>
+                <li> <a href="store.html">About</a> </li>
+                <li> <a href="store.html">Contact us</a> </li>
+                <div class="searchbox">
+                    <input type="text" id="textt" placeholder="search now"></input>
+                </div>
+            </ul>
+        </nav>
+
+    </header>
+
+<br>
+    <p>Ameya Santosh Gidh is a boy from mumbai studied at spce,pace and podar international school ssc</p>
+    <h2>Form</h2>
+    <!-- Form -->
+    <form action="abc.php">
+     <div>  <label for='name'>Name</label><!--id in input and label should match -->
+      <input type="text" name="myname" id="Name">         <!-- name for id in backend and id for label-->
+    </div><br>
+
+    <div>
+     Email &nbsp<input type="email"id="Email">       
+    </div><br>
+
+    <div>  <label for='password'>password</label><!--id in input and label should match -->
+    <input type="password" name="mypassword" id="password">         <!-- name for id in backend and id for label-->
+    </div><br>
+    
+    <div>
+        <label for='textt'>Write about your self</label>
+        <br><!--For is the equivalent to id in input-->
+       <textarea name= id="textt" cols="50"rows="10"></textarea>
+    </div><br>
+
+    <div>
+        <label for="date">Date of Birth&nbsp</label>
+        <input type="date" name="mydate"id="date">
+    </div><br>
+<div>
+    <!-- for radio button use same name  -->
+   Male <input type="radio"name="myradio"value="Gender">Female<input type="radio"name="myradio"><br>
+</div><br>
+
+<div>
+    studied <input type="checkbox" name="mycheckbox">
+</div><br>
+
+<div>
+    Eaten <input type="checkbox" name="mycheckbox" checked><!--checked to keep default as checked-->
+</div><br>
+
+<div>
+    Resting <input type="checkbox" name="mycheckbox">
+</div><br>
+
+<div>
+<!-- div is an block tage ie it takes full row -->
+<label for= "submit">Submit</label>
+<input type="submit" name="mysubmit"id="submit">
+</div><br> 
+<div>
+    <label for= "Reset">Reset</label>
+    <input type="reset" name="myreset"id="reset">
+    </div><br> 
+
+ <div>
+     <label for="myselected">Cars</label>
+     <select name="myselect" id="myselected">
+      <option value="zen">Zen</option>
+      <option value="Venue">Venue</option>
+     </select>
+ </div>   
+</form>
+</body>
+</html>

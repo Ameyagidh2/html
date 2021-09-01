@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameya's Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+
+    <style>
+   body{
+    font-family: 'Baloo Bhai 2', cursive;
+       background: url("static/gym.jpg");
+       background-repeat: no-repeat;
+       color: beige;
+   }
+   .left{
+     padding: 30px ;
+       font-size: 30px;
+       /* border:2px solid blue; */
+       position: absolute;
+       left: 30px ; 
+       top:20px;
+       display: inline-block;
+
+   }
+   .mid{
+    font-size: 30px; 
+     /* border:2px solid blue; */
+    display: block;
+    /* center a mid element */
+    margin: 20px auto;
+    /* margin top and right distance  */
+    width: 36%;
+    padding:30px;
+       
+   }
+
+   .right{
+    padding: 30px ;
+    font-size: 30px;
+      /* border:2px solid blue; */
+       position: absolute;
+       right: 30px ;
+       top:20px;
+   }
+   .navbar{
+     display: inline-block;
+   }
+   .navbar li{
+    display: inline-block;
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    /* get items in a row form  */
+    
+   }
+   .left img{
+     width:120px;
+     filter: invert(100);
+     /* color:rgb(54, 48, 48); */
+   }
+   .left div{
+    text-align: center;
+    width:3px;
+       }
+.navbar li a{
+  
+  text-decoration: none;
+  color: white;
+   
+}
+.btn{
+  font-family: 'Baloo Bhai 2', cursive;
+  padding: 2px 4px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.btn:hover{
+  background-color: rgb(184, 175, 175);
+
+}
+  
+.navbar li a:hover{
+   color: grey;
+   text-decoration: underline;
+  }
+
+  .container{
+    display: block;
+    border-radius: 15px;
+    border:2px solid black;
+    margin: 100px 20px;
+    padding: 48px 50px ;
+  }
+  
+  #name,#email{
+    margin-left: 110px;
+  }
+  #contact_number{
+    margin:20px 30px;
+    
+  }
+  #address{
+    margin-left: 90px;
+  }
+  #Age{
+    margin-left: 120px ;
+  }
+  #gender{
+    margin-left: 95px ;
+  }
+  #submit{
+margin:30px;
+padding: 14px;
+border-radius: 15px;
+  }
+#submit:hover{
+  background-color: blue;
+  text-decoration:underline;
+}  
+    </style>
+</head>
+<body>
+    <header>
+       <div class="header">
+         <div class="right">
+            <button class="btn">Contact Us </button>
+            <button class="btn">Email Us </button>
+          </div>
+       <div class="mid">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html">Contact us</a></li>
+            <li><a href="index.html">Join fitness</a> </li>
+        </ul>
+      </div>
+      <div class="left">
+        <img src="static/gym_logo.png" alt="">
+        <div>Ameya's Fitness</div>
+      </div>
+    </div>
+    </header>
+    <div class="container">
+      <h1>Join Our Gym</h1>
+      <form action="abc.php">
+      <div label for="name">Name</label>
+        <input type="text"id="name"name="myname">
+      </div><br>
+      <div label for="email">Email</label>
+        <input type="email"id="email"name="myemail">
+      </div><br>
+      <div label for="contact_number" id="contact">Contact Number</label>
+        <input type="number"id="contact_number"name="mycontact_number">
+      </div><br>
+      <div label for="Age">Age </label>
+        <input type="number"id="Age"name="myAge">
+      </div><br>
+      <div label for="gender">gender </label>
+        <input type="text"id="gender"name="mygender">
+      </div><br>
+      <div label for="address">Address </label>
+        <input type="text"id="address"name="myaddress">
+      </div><br>
+      <div label for="submit"></label>
+        <input type="submit"id="submit"name="mysubmit">
+      </div><br>
+    </form>
+    </div>
+  </div></body>
+</html>

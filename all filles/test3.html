@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<!-- /* .box{
+width:130px;
+height: 80px;
+border: 2px solid black;
+}
+  
+#box-1{
+    display: none;
+    /* display will remove space along with the item and visibility none will keep space  */
+    /* position: relative;
+    /* z index -ve or lower top px value then that item gets hidden it workd=s on position relative or other values */
+    /* top: 40px; */
+/* } */
+/* #box-2{ */
+    /* position: relative; */
+    /* z index -ve or lower top px value then that item gets hidden it workd=s on position relative or other values */
+    /* top: 35px; */
+    /* z-index: 34px; */
+ } -->
+<style>
+.container{
+    /* height: 130px;
+    width:230px; */
+    border: 2px solid black;
+    display:flex;
+    /* like inline  */
+    flex-wrap: wrap;
+    /* flex-direction: column; blocks around same row  */
+    flex-direction:row;
+    justify-content: center;
+    justify-content:space-evenly;
+    align-items: center;
+    /* container properties  */
+
+}
+
+#box-1{
+background-color: blue;
+width: 340px; 
+height: 360px ;
+/* item properties  */
+order:2 
+/* bigger order comes at the end of element */
+flex-basis: 320px ;
+}
+
+#box-2{
+    background-color: brown;
+     width: 340px; 
+     height: 360px ; 
+     order:4;
+     flex-grow: 30;
+     flex-shrink: 2;
+     /* flex grow and flex shrink useful for responsive design */
+   
+}
+#box-3{
+    background-color: chartreuse;
+     width: 340px; 
+     height: 360px ; 
+}
+html{
+    width: 100%;
+    border:2px solid black;
+    height: 100%;
+    text-align: center;
+}
+
+.cont{
+    width=10px;
+    height: 20px;
+  
+}
+.box1{
+    /* box is 10 times the size of parent container cont as em is used here  */
+    /* and rem for relative to html tag  */
+    width: 100em;
+    height: 5rem;   
+    /* vh and vw for width and  height: scaling  */
+    
+    border:2px solid blue;
+}
+.box2{
+    border:2px solid green;
+     width: 100vw;
+     /* vw for row height wrt parent screen */
+     height: 100vh;  
+     display:none;
+}
+/* media query to inject a specific css during responsive design  */
+@media only screen and (min-width:100px ) and (max-width:800px){
+    .box2{
+        display:block;
+        background-color: indigo;
+        color: khaki;
+    }
+}
+div>p{
+    /* only p which is in=mmediately inside div is affected */
+    background-color: lawngreen;
+}
+div+p{
+    /* p who is immediately after div  */
+    background-color: lightblue;
+}
+/* nth child to target takes values like 3 or other nos +even or odd */
+li:nth-child(3n+3){
+    background-color: lightcoral;
+}
+li:nth-child(odd){
+    background-color: lightcoral;
+}
+
+input(type="text"){
+    color:red;
+}
+a[target="_self"]{
+    background-color: red;
+}
+
+:root{
+    /* declare global variables here  */
+    --danger-color:red;
+}
+p{
+    background-color: var(--danger-color);
+
+}
+
+/* flexbox if height given use a justify content center  */
+
+</style>
+</head>
+<body>
+    <!-- <div class="box" id="box-1"></div>
+    <div class="box" id="box-2"></div>
+    <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div> -->
+
+    <!-- flexbox -->
+<!--     
+<div class="container" >
+<div class="items" id="box-1"><H1>B1</H1> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat, eveniet.b1</div>
+<div class="items" id="box-2"><H1>B2</H1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, minus?b2</div>
+<div class="items" id="box-3"><H1>B3</H1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non doloremque accusamus ipsum cumque!b3</div>
+</div> -->
+
+<!-- rem size wrt html {} tag and em wrt parent vh and vw are in percentage-->
+<!-- <div class="cont">
+<div class="box2"><<h1>B2</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam!</div>
+<div class="box3"><h1>B3</h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam!</div>
+
+<div class="divp">
+  <p>P in div</p>
+   <li><p>p inside li</p></li>
+</div>
+<p>P is immediately  after div </p>
+<ul></ul><li>abc1</li>
+</div>
+<!-- width set +center of a block element set width then margin auto -->
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur excepturi accusantium quas hic.</p>
+
+</body>
+</html>

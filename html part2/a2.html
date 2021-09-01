@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // arrow function 
+    let great=()=>{
+        console.log('hello');
+    }
+    let f1=(a,b)=>a+b;
+    great()
+    // setTimeout(() => {
+    //     console.log("Buddy");
+    // }, 2000);
+
+    let obj1={
+        greeting:"good morning",
+        namess:["A","L","S"],
+        speak(){
+            this.namess.forEach((a)=>{
+                console.log(this.greeting+" yes "+a)
+            })
+        }
+    }
+    // Arrow function value will find the this function in its parent 
+
+    obj1.speak();
+
+
+    // Maths object 
+    let m=Math;
+    console.log(m);
+//     E: 2.718281828459045
+// LN2: 0.6931471805599453
+// LN10: 2.302585092994046
+// LOG2E: 1.4426950408889634
+// LOG10E: 0.4342944819032518
+// PI: 3.141592653589793
+// SQRT1_2: 0.7071067811865476
+// SQRT2: 1.4142135623730951
+// abs: ƒ abs()
+// acos: ƒ acos()
+// acosh: ƒ acosh()
+// asin: ƒ asin()
+// asinh: ƒ asinh()
+// atan: ƒ atan()
+// atan2: ƒ atan2()
+// atanh: ƒ atanh()
+// cbrt: ƒ cbrt()
+// ceil: ƒ ceil()
+// clz32: ƒ clz32()
+// cos: ƒ cos()
+// cosh: ƒ cosh()
+// exp: ƒ exp()
+// expm1: ƒ expm1()
+// floor: ƒ floor()
+// fround: ƒ fround()
+// hypot: ƒ hypot()
+// imul: ƒ imul()
+// log: ƒ log()
+// log1p: ƒ log1p()
+// log2: ƒ log2()
+// log10: ƒ log10()
+// max: ƒ max()
+// min: ƒ min()
+// pow: ƒ pow()
+// random: ƒ random()
+// round: ƒ round()
+// sign: ƒ sign()
+// sin: ƒ sin()
+// sinh: ƒ sinh()
+// sqrt: ƒ sqrt()
+// tan: ƒ tan()
+// tanh: ƒ tanh()
+// trunc: ƒ trunc()
+// Symbol(Symbol.toSt
+console.log(Math.sin(Math.PI/2));
+console.log(Math.pow(2,3));
+
+
+// Json for transo=port of data through network 
+// json for string format to be sent and manipulated accross the network
+let json_obj={
+    name:"Ameya",
+    Father:"Santosh",
+    Mother:"Leena"
+}
+let j1=JSON.stringify(json_obj)
+// converts json obj to string
+console.log(json_obj);
+console.log("String form of json object ",j1);
+let j2=JSON.parse(j1);
+// json object back from the string 
+console.log(j2);
+</script>        
+</body>
+</html>

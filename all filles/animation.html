@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ameya.css">
+    <style>
+        .grid_container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* column size here  */
+            grid-column-gap: 1rem;
+            grid-row-gap: 5rem;
+            /* grid-template-rows: repeat(4, 3fr); */
+            grid-template-rows: 3fr 2fr 1fr;
+            /* row size here  */
+            grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+            /* as per display size of devices  */
+        }
+        .grid{
+            background-color:rgb(64, 201, 255);
+            border: 2px solid black;
+            
+        }
+        .grid:first-child{
+            /* combining rows and columns together */
+            grid-column:1/span 2;
+             /* space of 2 columns  */
+
+            /* grid-row: 2 /span 3; */
+            /* takes the second row and spans 2 more  */
+            /* grid-row: 1 /span 2; */
+            /* 1st column takes space of 2 rows  */
+        }
+        /* grid makes them responsive  */
+.item{
+    background-color: cornflowerblue;
+    border: 2px solid gray;
+}
+        .area_container{
+            display: grid;
+             grid-template-areas: 
+             /* 3 items hence 3 times repeat  */
+             'navbar navbar navbar'
+             'section section aside'
+             /* specify the layout here */
+             'footer footer footer';
+        }
+
+        #nav_bar{
+            grid-area: navbar;
+        }
+        #section{
+        grid-area: section;
+        }
+        #aside{
+          grid-area: aside;
+        }
+@media only screen and (min-width:200px) and (max-width:600px){
+   body{
+       background-color:red;
+
+   } 
+   #aside{
+       display: none;
+       /* hides the aside display in medium size devices  */
+   }
+}
+
+@media only screen and (min-width:0px) and (max-width:200px){
+   body{
+       background-color:blue;
+
+   } 
+}
+    </style>
+</head>
+<body>
+    <!-- <div class="grid_container">
+        <div class="grid">1</div>
+        <div class="grid"> 2 </div>
+        <div class="grid">3</div>
+        <div class="grid">4</div>
+        <div class="grid"> 5 </div>
+        <div class="grid">6</div>
+        <div class="grid">7</div>
+        <div class="grid">  8 </div>
+        <div class="grid">9</div>
+    </div> -->
+<!-- grid areas  -->
+<div class="area_container">
+<div class="item"id="nav_bar">Home About Contact</div>
+<div class="item"id="section">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores, exercitationem?</div>
+
+<div class="item"id="aside">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis cupiditate impedit ratione!</div>
+
+</div>
+<footer class="item"id="footer">This is footer</footer>
+</body>
+</html>

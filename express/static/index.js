@@ -1,0 +1,1 @@
+console.log("There is a static file");

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        /* .{ */
+            /* box-sizing: border-box; */
+            /* block element width can be changed */
+        /* } */
+        .header1{
+            /* display: inline; */
+            border: 2px solid red;
+            width:1200 ;
+            /* change width always */
+            margin: auto ;
+            /* header block element */
+            /* no need to change margin anf width as we habve already done that to its inside elemnts */
+           
+        /* you cannot change with of inline elements */
+        }
+        h3{
+            /* display: inline; */
+            margin: 0px ;
+            /* padding-left: 200px; to center text or use text align */
+            text-align: center;
+        }
+        img{
+            display:block;
+            margin: auto;
+            /* now block so we can change the margin              */
+            width: 184px ;
+        }
+        .box{
+            border: 2px solid black;
+            background-color: grey;
+            margin: 4px;
+            padding:23px ;
+            /* div is a block elemwnt make it inline-block and change its width  */
+            display: inline-block;
+            width:32%;
+            box-sizing: border-box;
+            box-shadow:inset 10px 20px 10px 3px blue;
+            /* offset x , y blurr radius space and color  for inner side changes use inset*/
+           
+        }
+        .container{
+            width: 1200px;
+            /* make width of container same as the heading width  */
+          margin: auto;
+        }
+        .header1 h3{
+            text-shadow: 4px 2px  green;
+        }
+    
+    </style>
+</head>
+<body>
+    <header class="header1">
+        <img src="ameya_gidh.jpg" alt=""></img>
+        <!-- img is inline element  -->
+      <h3>Ameya</h3>
+      <!-- h3 is block element  -->
+      <!-- <p>Lorem ipsum dolor sit amet consectetur.</p> -->
+    </header>
+    <!-- inline Plus change width use display  -->
+    <div class="container">
+        <div class="box"id="b1">
+        <h4 class="h44">Head</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis eum ut est.</p>
+        </div>
+        <div class="box"id="b2">
+            <h4 class="h44">Head</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dicta eos necessitatibus?</p>
+            </div>
+            <div class="box"id="b1">
+                <h4 class="h44">Head</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, debitis?</p>
+         </div>
+    </div>
+</body>
+</html>

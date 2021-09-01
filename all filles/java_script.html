@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Alert does not return a value 
+    //  alert("Hello friends");
+
+
+    //  prompt
+    // let a=prompt("Please Enter Your name: ","Guest")
+    // guest is default or just use "" 
+    // console.log(a);
+
+    // confirm box 
+    // let delete_post=confirm("Do you want to delete post");
+    // if(delete_post){
+    //     console.log("Post deleted");
+    // }
+    // else {
+    //     console.log("Request cancelled");
+    // }
+
+    let familys={
+        name:"Ameya",
+        father:"Santosh",
+        Mother:"Leena",
+    }
+    let family=new Array("Ameya","Santosh","Leena",1,4,22);
+    console.log(family.length);
+    console.log(family[2])
+    // for (let index = 0; index < family.length; index++) {
+    //     const element = family[index];
+    //     console.log(element);
+    // }
+// let i=0;
+//     do{
+//         console.log(family[i]);
+//         i++;
+//     }
+//     while(i<family.length)
+
+// let j=0;
+// while(j<family.length)
+// {
+// console.log(family[j]);
+// j++
+// }
+
+//  family.forEach(function f(element){
+//      console.log(element);
+//  })
+
+
+// alternate ways of writing for loop 
+// for(element of family){
+//     console.log(element);
+// }
+
+
+// Now printing elements of dictationary familys 
+  </script>
+    <div>
+        <ul>
+            <li>item-1</li>
+            <li>item-2</li>
+            <li>item-3</li>
+            <li>item-4</li>
+            <li>item-5</li>
+            <li>item-6</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div id="inner">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates repudiandae fugit officia?
+
+        </div>
+        <button id="btn" onclick="toggles()">Show/Hide</div>
+
+    </div>
+    <p id="par">Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo molestias veritatis perspiciatis distinctio? Aspernatur quidem voluptatum, quos recusandae similique nostrum. Saepe optio vitae natus quia tempora ad a, nobis quidem blanditiis numquam non asperiores sequi unde, est exercitationem quos delectus. Voluptas facilis quae laborum blanditiis! Dignissimos assumenda dolor provident, commodi hic laborum fugiat nisi ipsum quidem est tenetur corporis dolorum quas voluptate repellat maxime similique necessitatibus minima dolore mollitia nemo possimus?</p>
+
+    <style>
+        #btn{
+            border-radius: 10px;
+            border: 2px solid black;
+            color: white;
+            background-color: coral;
+            cursor: pointer;
+        }
+
+    
+    </style>
+    <script>
+        // functions are inside scripts 
+let par=document.getElementById('par');
+
+par.addEventListener( 'mouseover',function run()  {  
+// alert("Mouseout is also a function");\
+console.log("mouseover")
+    });
+let btn=getElementById("btn");
+function toggles(){
+         
+          if(par.style.display!="none"){
+              par.style.display="none";
+
+          }
+          else{
+              par.style.display="block";
+          }
+        }
+    </script>
+    <!-- DOM -->
+<!-- <script>
+    let para=document.getElementById("inner");
+    console.log(para);
+    console.log(para.innerHTML);
+    // para.innerHTML="Pokemon")
+    // console.log(para.innerHTML="Pokemon");
+    let cla=document.getElementsByClassName("container");
+    console.log(cla.innerHTML);
+</script> -->
+
+<!-- Events are what has occured -- -->
+<!-- Accessing events using methods similar to Android studio -->
+
+
+<!-- functions to be written in scripts  and onclick use () function  -->
+
+<!-- Date time tutorial -->
+<div id="timer">Time is </div>
+
+<script>
+// setTimeout runs just once 
+// setInterval runs after a interval of time 
+
+let time=setTimeout(12)
+console.log(time);
+let time2=setInterval(12)
+console.log(time2);
+// this gives Id of the function 
+clearTimeout(time2);
+// stops the  timeout
+function greet(name="Guest",text="Take Care"){
+    console.log("HI "+name+" "+text);
+}
+let a=setInterval(greet,200,"Ameya");
+console.log(a);
+let ct=clearTimeout(a)
+console.log(ct)
+// runs till cleared 
+
+let b=setTimeout(greet,1200,"Ameya");
+console.log(b);
+// Runs just once text  in console will display after 1200 seconnds. </script>
+</script>
+
+</body>
+</html>
